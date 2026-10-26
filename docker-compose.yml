@@ -1,0 +1,8 @@
+services:
+  web:
+    build: .
+    image: task4-cicd-app:latest
+    container_name: task4-cicd-app
+    ports:
+      - "80:3000"
+    restart: unless-stopped
